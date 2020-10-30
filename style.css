@@ -13,7 +13,6 @@ html {
 }
 .main_container {
   height: 100vh;
-  width: 100vw;
   background-image: url("./images/bg-desktop.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -75,7 +74,7 @@ html {
   width: 100%;
 }
 .progress_bar {
-  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(90deg,#ffa399,#ff4d97);
   border-radius: 50px;
   border: solid 2pt black;
   height: 18px;
@@ -117,7 +116,6 @@ span {
     background-size: cover;
   }
   .wrapper_container {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

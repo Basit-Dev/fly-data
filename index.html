@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="main_container">
+    <div class="wrapper_container">
+      <section class="left_section">
+        <div class="left_container">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Logo" />
+          </div>
+          <div class="logo_icon_container">
+            <img src="./images/icon-document.svg" alt="Document Icon" width="40px" height="40px" />
+            <img src="./images/icon-folder.svg" alt="Folder Icon" width="40px" height="40px" />
+            <img src="./images/icon-upload.svg" alt="Upload Icon" width="40px" height="40px" />
+          </div>
+        </div>
+      </section>
+      <section class="right_section">
+        <div class="right_section_container">
+          <div class="progress_bar_text">
+            <p>You’ve used <span>815 GB </span> of your storage</p>
+          </div>
+          <div class="progress_bar_background">
+            <div class="progress_bar">
+              <div class="progress_bar_dot"></div>
+            </div>
+          </div>
+          <div class="progress_bar_gb_text">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+  <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
 </body>
+
 </html>

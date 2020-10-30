@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  color: hsl(243, 100%, 93%);
+  background: hsl(229, 57%, 11%);
+}
+.main_container {
+  border: solid red;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
+  background-attachment: fixed;
+}
+/* This centres the div horizontally and vertically and makes the children display flex*/
+.wrapper_container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* This div is the child of the flex  div */
+.left_section {
+  background: hsl(228, 56%, 26%);
+  border-radius: 10px 100px 10px 10px;
+  width: 350px;
+  font-size: 1.4rem;
+  margin-right: 3rem;
+}
+.left_container {
+  margin: 3.5rem;
+}
+.logo {
+  margin-bottom: 3rem;
+}
+.logo_icon_container img {
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 5px;
+}
+/* This div is the child of the flex  div */
+.right_section {
+  background: hsl(228, 56%, 26%);
+  position: relative;
+  top: 53px;
+  width: 35%;
+  /* Need to use fit-content otherwise the div reverts back to the default full height of the wrapper_container */
+  height: fit-content;
+  border-radius: 10px;
+}
+.right_section_container {
+  margin: 3rem;
+}
+.progress_bar_text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.progress_bar_background {
+  background: hsl(229, 57%, 11%);
+  border-radius: 50px;
+  height: 18px;
+  width: 100%;
+}
+.progress_bar {
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 50px;
+  border: solid 2pt black;
+  height: 18px;
+  width: 70%;
+}
+.progress_bar_dot {
+  float: right;
+  background: white;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0.2rem;
+}
+.progress_bar_gb_text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}

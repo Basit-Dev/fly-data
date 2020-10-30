@@ -12,7 +12,6 @@ html {
   background: hsl(229, 57%, 11%);
 }
 .main_container {
-  border: solid red;
   height: 100vh;
   width: 100vw;
   background-image: url("./images/bg-desktop.png");

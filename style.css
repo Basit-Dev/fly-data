@@ -120,7 +120,6 @@ span {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    border: solid rgb(153, 56, 51);
   }
   .left_section {
     background: hsl(228, 56%, 26%);
